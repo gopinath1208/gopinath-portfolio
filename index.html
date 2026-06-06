@@ -3,127 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>B Gopinath Portfolio</title>
-
+<title>B Gopinath | Portfolio</title>
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#050816;
-color:white;
-}
-
-.hero{
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:40px;
-gap:60px;
-}
-
-.hero img{
-width:320px;
-height:420px;
-object-fit:cover;
-border-radius:20px;
-box-shadow:0 0 40px cyan;
-}
-
-.content h1{
-font-size:60px;
-margin-bottom:10px;
-}
-
-.content h2{
-color:cyan;
-margin-bottom:20px;
-}
-
-.content p{
-max-width:500px;
-line-height:1.8;
-}
-
-.skills{
-padding:80px 10%;
-}
-
-.skills h2{
-margin-bottom:30px;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-.card{
-padding:25px;
-background:#111827;
-border-radius:15px;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-box-shadow:0 0 20px cyan;
-}
-
-@media(max-width:768px){
-.hero{
-flex-direction:column;
-text-align:center;
-}
-
-.content h1{
-font-size:40px;
-}
-}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:linear-gradient(135deg,#050816,#0f172a);color:#fff}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;gap:60px;padding:40px;flex-wrap:wrap}
+img{width:320px;height:420px;object-fit:cover;border-radius:24px;box-shadow:0 0 40px rgba(0,255,255,.6)}
+h1{font-size:64px}
+h2{color:#22d3ee;margin:12px 0}
+.card{background:rgba(255,255,255,.08);padding:25px;border-radius:18px;backdrop-filter:blur(10px)}
+.skills{padding:60px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px}
+.item{background:#111827;padding:20px;border-radius:14px;text-align:center}
 </style>
 </head>
-
 <body>
-
 <section class="hero">
-
-<img src="profile.jpg" alt="Gopinath">
-
-<div class="content">
+<img src="profile.jpg" alt="Profile">
+<div>
 <h1>B GOPINATH</h1>
-
 <h2>Digital Marketing Executive</h2>
-
-<p>
+<div class="card">
 SEO • Google Ads • Facebook Ads • WordPress • AI Tools
-</p>
-
 </div>
-
+</div>
 </section>
 
 <section class="skills">
-
 <h2>Skills</h2>
-
-<div class="cards">
-
-<div class="card">SEO</div>
-<div class="card">Google Ads</div>
-<div class="card">Facebook Ads</div>
-<div class="card">Google Analytics</div>
-<div class="card">WordPress</div>
-<div class="card">AI Tools</div>
-
+<div class="grid">
+<div class="item">SEO</div>
+<div class="item">Google Ads</div>
+<div class="item">Facebook Ads</div>
+<div class="item">Google Analytics</div>
+<div class="item">WordPress</div>
+<div class="item">AI Tools</div>
 </div>
-
 </section>
-
 </body>
 </html>
