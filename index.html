@@ -1,16 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Gopinath Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B Gopinath Portfolio</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#050816;
+color:white;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px;
+gap:60px;
+}
+
+.hero img{
+width:320px;
+height:420px;
+object-fit:cover;
+border-radius:20px;
+box-shadow:0 0 40px cyan;
+}
+
+.content h1{
+font-size:60px;
+margin-bottom:10px;
+}
+
+.content h2{
+color:cyan;
+margin-bottom:20px;
+}
+
+.content p{
+max-width:500px;
+line-height:1.8;
+}
+
+.skills{
+padding:80px 10%;
+}
+
+.skills h2{
+margin-bottom:30px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+padding:25px;
+background:#111827;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px cyan;
+}
+
+@media(max-width:768px){
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.content h1{
+font-size:40px;
+}
+}
+</style>
 </head>
 
-<body style="background:black;color:white;text-align:center;padding-top:100px;">
+<body>
 
+<section class="hero">
+
+<img src="profile.jpg" alt="Gopinath">
+
+<div class="content">
 <h1>B GOPINATH</h1>
 
 <h2>Digital Marketing Executive</h2>
 
-<p>My Portfolio Website</p>
+<p>
+SEO • Google Ads • Facebook Ads • WordPress • AI Tools
+</p>
+
+</div>
+
+</section>
+
+<section class="skills">
+
+<h2>Skills</h2>
+
+<div class="cards">
+
+<div class="card">SEO</div>
+<div class="card">Google Ads</div>
+<div class="card">Facebook Ads</div>
+<div class="card">Google Analytics</div>
+<div class="card">WordPress</div>
+<div class="card">AI Tools</div>
+
+</div>
+
+</section>
 
 </body>
 </html>
