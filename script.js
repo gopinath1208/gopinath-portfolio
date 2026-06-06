@@ -1,16 +1,16 @@
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
 
-  const cards = document.querySelectorAll(".card, .project, .skill");
+  const sections = document.querySelectorAll("section");
 
-  cards.forEach(card => {
-    card.addEventListener("mouseenter", () => {
-      card.style.transform = "translateY(-10px)";
-      card.style.transition = "0.3s";
-    });
+  sections.forEach((section, index) => {
+    section.style.opacity = "0";
+    section.style.transform = "translateY(50px)";
 
-    card.addEventListener("mouseleave", () => {
-      card.style.transform = "translateY(0)";
-    });
+    setTimeout(() => {
+      section.style.transition = "all 1s ease";
+      section.style.opacity = "1";
+      section.style.transform = "translateY(0)";
+    }, index * 300);
   });
 
 });
